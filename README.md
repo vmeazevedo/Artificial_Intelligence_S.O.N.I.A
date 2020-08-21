@@ -36,3 +36,44 @@ Teste da inicialização do sistema + desligamento do sistema:
 
 Teste do comando Google e Pesquisar:
 * https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
+
+
+
+# Inteligência_Artificial_S.O.N.I.A
+Artificial intelligence was developed to be a personal assistant, performing searches on Google and Youtube by voice commands.
+  
+## Requirements
+You will need to install the library below:
+- pip install SpeechRecognition
+- pip install DateTime
+- pip install pywhatkit
+- pip install gTTS
+- pip install requests-html
+- pip install playsound
+
+
+## Example of code operation:
+- When starting the AI, it will automatically present the weather forecast for your location at the exact time.
+
+- In sequence, it will ask the user to introduce himself.
+- When the user informs his name, the AI ​​automatically processes the audio and turns it into a string, in sequence it checks if the user is already registered in its database.
+- If the user is not registered, she performs the registration of the user's name and asks him to log in again to grant access to the functionalities.
+- If the user is already registered in the database, it returns the user's name with a greeting.
+- With the user properly logged in, the A.I switches to listening mode, where she will wait until the voice command is recognized. In its basic functionality, it contains three voice commands: Google, Search and Shutdown.
+
+System boot test + system shutdown:
+* https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
+
+
+## Voice Commands:
+### Google
+- When informing the voice command "Google" the AI ​​will return a sentence saying: "What would you like?"
+- The user will tell the content of the search on Google and the A.I will present the search performed.
+
+
+### YouTube
+- When informing the voice command "Search" the AI ​​will return a phrase saying: "What would you like?"
+- The user will say the content of the search on Youtube and the AI ​​will open the desired video.
+
+Google command search and search:
+* https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
