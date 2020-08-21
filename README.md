@@ -2,7 +2,7 @@
 A inteligência artificial foi desenvolvida para ser uma assistente pessoal, realizando buscas no Google e Youtube por comandos de voz.
   
 ## Requirements
-* Será necessário instalar a biblioteca abaixo:
+Será necessário instalar a biblioteca abaixo:
 - pip install SpeechRecognition
 - pip install DateTime
 - pip install pywhatkit
@@ -21,7 +21,7 @@ A inteligência artificial foi desenvolvida para ser uma assistente pessoal, rea
 - Com o usuário devidamente logado, a I.A passa para modo de escuta, onde ela irá aguardar até que o comando de voz seja reconhecido. Em suas funcionalidades básicas, ela contém três comandos de voz: Google, Pesquisar e Desligar.
 
 Teste da inicialização do sistema + desligamento do sistema:
-https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
+* https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
 
 
 ## Comandos de Voz:
@@ -35,4 +35,4 @@ https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
 - O usuário irá dizer o conteúdo da busca no Youtube e a I.A irá abrir o video desejado.
 
 Teste do comando Google e Pesquisar:
-https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
+* https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
