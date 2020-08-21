@@ -20,7 +20,7 @@ Será necessário instalar a biblioteca abaixo:
 - Caso o usuário já esteja cadastrado na base de dados, ela retorna o nome do usuário com uma saudação.
 - Com o usuário devidamente logado, a I.A passa para modo de escuta, onde ela irá aguardar até que o comando de voz seja reconhecido. Em suas funcionalidades básicas, ela contém três comandos de voz: Google, Pesquisar e Desligar.
 
-Teste da inicialização do sistema + desligamento do sistema:
+Teste da inicialização do sistema + desligando o sistema:
 * https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
 
 
