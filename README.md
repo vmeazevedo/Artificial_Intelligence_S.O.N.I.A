@@ -39,7 +39,7 @@ Teste do comando Google e Pesquisar:
 
 
 
-# Inteligência_Artificial_S.O.N.I.A
+# Artificial_Intelligence_S.O.N.I.A
 Artificial intelligence was developed to be a personal assistant, performing searches on Google and Youtube by voice commands.
   
 ## Requirements
