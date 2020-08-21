@@ -1,4 +1,4 @@
-# Artificial_Intelligence_S.O.N.I.A
+# Inteligência_Artificial_S.O.N.I.A
 A inteligência artificial foi desenvolvida para ser uma assistente pessoal, realizando buscas no Google e Youtube por comandos de voz.
   
 ## Requirements
