@@ -2,13 +2,13 @@
 A inteligência artificial foi desenvolvida para ser uma assistente pessoal, realizando buscas no Google e Youtube por comandos de voz.
   
 ## Requirements
-Será necessário instalar a biblioteca abaixo:
-pip install SpeechRecognition
-pip install DateTime
-pip install pywhatkit
-pip install gTTS
-pip install requests-html
-pip install playsound
+* Será necessário instalar a biblioteca abaixo:
+- pip install SpeechRecognition
+- pip install DateTime
+- pip install pywhatkit
+- pip install gTTS
+- pip install requests-html
+- pip install playsound
 
 
 ## Exemplo de funcionamento do código:
