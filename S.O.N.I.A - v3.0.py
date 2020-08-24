@@ -32,11 +32,11 @@ def Recognition():
         with sr.Microphone() as source:
             recognizer.adjust_for_ambient_noise(source)
 
-            print('Say:')
+            print('Ouvindo:')
 
             sound = recognizer.listen(source)
-            speech = recognizer.recognize_google(sound, language='pt').lower()
-            print('You said: ', speech)
+            speech = recognizer.recognize_google(sound, language='pt')
+            print('Você disse: ', speech)
 
             return speech
     except:
@@ -85,7 +85,7 @@ def cadastro_login():
                     f.write(texto)
                     f.write('\n')
 
-# Utilizando IN ao inves de == para que o comando seja acionado quando a palavra estiver na string, possibilitando
+# Utilizando IN ao inves de == para que o comando seja acionado quando a palavra estiver na string, possibilitando 
 # o reconhecimento do comando dentro de uma frase.
 # Utilizando apenas o RADICAL da palavra para a checagem, possibilitando que a palavra possa ser dita em diferentes
 # forma, ex: comando: Desligar Radical: Deslig Possibilidades: desligar, desligue, desligando...
