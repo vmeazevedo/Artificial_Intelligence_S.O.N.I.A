@@ -23,6 +23,8 @@ def speak(text):
     speaker = pyttsx3.init('sapi5')
     speaker.say(text)
     speaker.runAndWait()
+    # speaker.stop()
+
 
 # Criando um método para lidar apenas com o reconhecimento de voz
 def Recognition():
@@ -78,17 +80,18 @@ def cadastro_login():
                     found = True
                     opções()
             
-                if not found:
-                    speak('Não encontrei o seu usuário em meus registros.')
-                    speak('Lembrarei de você no seu próximo login.')
-                    speak('Por favor realize o login novamente.')
-                    with open('usuarios.txt', 'a') as f:
-                        f.write(texto)
-                        f.write('\n')
+        if not found:
+            speak('Não encontrei o seu usuário em meus registros.')
+            speak('Lembrarei de você no seu próximo login.')
+            speak('Por favor realíze o login novamente.')
+            with open('usuarios.txt', 'a') as f:
+                f.write(texto)
+                f.write('\n')
+        
     except:
         print("Não entendi.")
 
-        
+
 # Utilizando IN ao inves de == para que o comando seja acionado quando a palavra estiver na string, possibilitando 
 # o reconhecimento do comando dentro de uma frase.
 # Utilizando apenas o RADICAL da palavra para a checagem, possibilitando que a palavra possa ser dita em diferentes
@@ -97,14 +100,14 @@ def cadastro_login():
 def opções():
     while True:
         texto = Recognition()
-        if ('google' in texto):
+        if ('Google' in texto):
             pesquisa_google()
         if ('pesquis' in texto):
             pesquisa_youtube()
         if ('deslig' in texto):
             speak('Desligando o sistema.')
             playsound('audio\\down.mp3')
-            break    
+            break   
         time.sleep(5)
 
 # COMANDOS DE VOZ 
@@ -112,7 +115,6 @@ def pesquisa_google():
     #Função responsável por pesquisar no Google
     resp = '\nO que gostaria?'
     speak(resp)
-    print('Aguardando a sua resposta...')
     texto = Recognition()
     print('Você solicitou a pesquisa: {}'.format(texto))
     url='https://www.google.co.in/search?q='
@@ -123,10 +125,11 @@ def pesquisa_youtube():
     #Função responsável por pesquisar no Youtube
     resp = '\nO que gostaria?'
     speak(resp)
-    print('Aguardando a sua resposta...')
     texto = Recognition()
     print('Você solicitou a pesquisa: {}'.format(texto))
     kit.playonyt(texto)
+
+
 
 # ROTINA DO SISTEMA
 intro()
