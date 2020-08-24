@@ -68,23 +68,27 @@ if len(sys.argv)>0:
 def cadastro_login():
     speak('Informe seu usuário.')
     texto = Recognition()
-   
-    with open('usuarios.txt') as f:
-        found = False
-        for line in f:
-            if texto in line: 
-                speak('Bem vindo de vólta' + texto)
-                found = True
-                opções()
-        
-            if not found:
-                speak('Não encontrei o seu usuário em meus registros.')
-                speak('Lembrarei de você no seu próximo login.')
-                speak('Por favor realize o login novamente.')
-                with open('usuarios.txt', 'a') as f:
-                    f.write(texto)
-                    f.write('\n')
+    
+    try:
+        with open('usuarios.txt') as f:
+            found = False
+            for line in f:
+                if texto in line: 
+                    speak('Bem vindo de vólta' + texto)
+                    found = True
+                    opções()
+            
+                if not found:
+                    speak('Não encontrei o seu usuário em meus registros.')
+                    speak('Lembrarei de você no seu próximo login.')
+                    speak('Por favor realize o login novamente.')
+                    with open('usuarios.txt', 'a') as f:
+                        f.write(texto)
+                        f.write('\n')
+    except:
+        print("Não entendi.")
 
+        
 # Utilizando IN ao inves de == para que o comando seja acionado quando a palavra estiver na string, possibilitando 
 # o reconhecimento do comando dentro de uma frase.
 # Utilizando apenas o RADICAL da palavra para a checagem, possibilitando que a palavra possa ser dita em diferentes
