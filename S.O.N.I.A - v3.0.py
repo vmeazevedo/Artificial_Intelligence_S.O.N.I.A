@@ -18,13 +18,11 @@ r=sr.Recognizer()
 r.energy_threshold = 5000
 
 # Utilizando a biblioteca pyttsx3 para a criação do audio, dessa forma, não é necessário buscar por arquivos de audio
-
 def speak(text):
     speaker = pyttsx3.init('sapi5')
     speaker.say(text)
     speaker.runAndWait()
-    # speaker.stop()
-
+   
 
 # Criando um método para lidar apenas com o reconhecimento de voz
 def Recognition():
@@ -90,6 +88,7 @@ def cadastro_login():
         
     except:
         print("Não entendi.")
+        
 
 
 # Utilizando IN ao inves de == para que o comando seja acionado quando a palavra estiver na string, possibilitando 
@@ -107,7 +106,9 @@ def opções():
         if ('deslig' in texto):
             speak('Desligando o sistema.')
             playsound('audio\\down.mp3')
-            break   
+            # break
+            stop()
+
         time.sleep(5)
 
 # COMANDOS DE VOZ 
@@ -129,10 +130,12 @@ def pesquisa_youtube():
     print('Você solicitou a pesquisa: {}'.format(texto))
     kit.playonyt(texto)
 
-
+def stop():
+    print()
 
 # ROTINA DO SISTEMA
 intro()
 speak('Iniciando o sistema. A previsão do tempo atual é ')
 speak(previsao(local))
 cadastro_login()
+stop()
