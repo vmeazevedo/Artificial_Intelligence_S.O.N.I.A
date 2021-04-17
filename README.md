@@ -20,9 +20,6 @@ Será necessário instalar a biblioteca abaixo:
 - Caso o usuário já esteja cadastrado na base de dados, ela retorna o nome do usuário com uma saudação.
 - Com o usuário devidamente logado, a I.A passa para modo de escuta, onde ela irá aguardar até que o comando de voz seja reconhecido. Em suas funcionalidades básicas, ela contém três comandos de voz: Google, Pesquisar e Desligar.
 
-Teste da inicialização do sistema + desligando o sistema:
-* https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
-
 
 ## Comandos de Voz:
 ### Google
@@ -33,10 +30,6 @@ Teste da inicialização do sistema + desligando o sistema:
 ### YouTube
 - Ao informar o comando de voz "Pesquisar" a I.A irá retornar uma frase dizendo: "O que gostaria?"
 - O usuário irá dizer o conteúdo da busca no Youtube e a I.A irá abrir o video desejado.
-
-Teste do comando Google e Pesquisar:
-* https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
-
 
 
 # Artificial_Intelligence_S.O.N.I.A
