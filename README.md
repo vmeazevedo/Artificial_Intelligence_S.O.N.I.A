@@ -54,9 +54,6 @@ You will need to install the library below:
 - If the user is already registered in the database, it returns the user's name with a greeting.
 - With the user properly logged in, the A.I switches to listening mode, where she will wait until the voice command is recognized. In its basic functionality, it contains three voice commands: Google, Search and Shutdown.
 
-System boot test + system shutdown:
-* https://twitter.com/vmeazevedo/status/1293375823496515591?s=09
-
 
 ## Voice Commands:
 ### Google
@@ -68,5 +65,3 @@ System boot test + system shutdown:
 - When informing the voice command "Search" the AI ​​will return a phrase saying: "What would you like?"
 - The user will say the content of the search on Youtube and the AI ​​will open the desired video.
 
-Google command search and search:
-* https://twitter.com/vmeazevedo/status/1292846133807636488?s=09
